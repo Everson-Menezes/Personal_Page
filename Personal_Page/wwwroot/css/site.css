@@ -72,22 +72,67 @@ body {
 }
 img#mdCentro {
     position: absolute;
-    top: 17.5%;
-    left: 37%;
+    top: 16.4%;
+    left: 35.5%;
     width: 375px;
     height: 375px;
 }
 img#foto {
     position: absolute;
-    top: 35%;
-    left: 45%;
+    top: 33.1%;
+    left: 42.7%;
     border-radius: 100%;
-    width: 153px;
-    height: 153px;
+    width: 190px;
+    height: 190px;
+}
+label#edLabel {
+    top: 25%;
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    
+}
+img#mdA {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    width: 400px;
+    height: 400px;
+    visibility: hidden;
+}
+img#mdB {
+    position: absolute;
+    top: -5%;
+    left: 65%;
+    width: 400px;
+    height: 400px;
+    visibility:hidden;
+}
+img#mdC {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 400px;
+    height: 400px;
+    visibility: hidden;
+}
+img#mdD {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    width: 400px;
+    height: 400px;
+    visibility: hidden;
 }
 div.img-mold {
     z-index: 0;
 }
 div.img-foto {
+    z-index: 1;
+}
+div.img-md-conteudo {
     z-index: 1;
 }

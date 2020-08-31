@@ -2,9 +2,33 @@
     ViewData["Title"] = "Home Page";
 }
 
+<script>
+    function fade(id, visible) {
+        var img = document.getElementById(id);
+        img.style.visibility = (visible ? 'visible' : 'hidden');
+    }
+
+</script>
+
+<label class="table-bordered" id="edLabel" onmouseout="fade('mdA', false);" onmouseover="fade('mdA', true);">Education</label>
+
 <div class="img-mold">
     <img src="~/images/moldura centro.jpg" id="mdCentro" />
 </div>
 <div class="img-foto">
     <img src="~/images/índice.png" id="foto" />
 </div>
+
+<div class="img-md-conteudo">
+    <img src="~/images/moldura conteudo.jpg" id="mdA" />
+</div>
+<div class="img-md-conteudo">
+    <img src="~/images/moldura conteudo.jpg" id="mdB" />
+</div>
+<div class="img-md-conteudo">
+    <img src="~/images/moldura conteudo.jpg" id="mdC" />
+</div>
+<div class="img-md-conteudo">
+    <img src="~/images/moldura conteudo.jpg" id="mdD" />
+</div>
+
