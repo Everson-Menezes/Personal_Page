@@ -61,6 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: black;
 }
 .footer {
   position: absolute;
@@ -68,4 +69,25 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+img#mdCentro {
+    position: absolute;
+    top: 17.5%;
+    left: 37%;
+    width: 375px;
+    height: 375px;
+}
+img#foto {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    border-radius: 100%;
+    width: 153px;
+    height: 153px;
+}
+div.img-mold {
+    z-index: 0;
+}
+div.img-foto {
+    z-index: 1;
 }
