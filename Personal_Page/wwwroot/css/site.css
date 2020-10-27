@@ -1,7 +1,4 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
+﻿a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
@@ -29,6 +26,7 @@ a {
 html {
   font-size: 14px;
 }
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -60,79 +58,98 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  margin-bottom: 10%;
   background-color: black;
 }
+
 .footer {
   position: absolute;
-  bottom: 0;
+  top: 100%;
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-img#mdCentro {
+
+/*Imagem do centro*/
+.img-moldura {
     position: absolute;
-    top: 16.4%;
-    left: 35.5%;
-    width: 375px;
-    height: 375px;
+    top: 39.6%;
+    left: 45.5%;
 }
-img#foto {
+
+#mdCentro {
+    width: 238px;
+    height: 238px;
+    border-radius: 50%;
+}
+.img-foto {
     position: absolute;
-    top: 33.1%;
-    left: 42.7%;
-    border-radius: 100%;
-    width: 190px;
-    height: 190px;
+    top: 50%;
+    left: 50%;
 }
-label#edLabel {
-    top: 25%;
-    border-radius: 10px;
-    border-color: white;
+#foto {
+    border-radius: 50%;
+    width: 122px;
+    height: 122px;
+}
+
+/*Imagem do centro fim*/
+
+/*Textos e labels*/
+
+.textos {
     color: white;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    
+    font: bold 22px arial;
 }
-img#mdA {
+
+#nome {
     position: absolute;
-    top: -5%;
-    left: 5%;
-    width: 400px;
-    height: 400px;
-    visibility: hidden;
+    top: 42%;
+    left: 39.5%;
 }
-img#mdB {
+#labelAa {
     position: absolute;
-    top: -5%;
-    left: 65%;
-    width: 400px;
-    height: 400px;
-    visibility:hidden;
+    top: 74%;
+    left: 39.5%;
 }
-img#mdC {
+
+#habilidades {
     position: absolute;
-    top: 35%;
-    left: 5%;
-    width: 400px;
-    height: 400px;
-    visibility: hidden;
+    top: 25%;
+    left: 10%;
 }
-img#mdD {
+
+#interesses {
     position: absolute;
-    top: 35%;
-    left: 65%;
-    width: 400px;
-    height: 400px;
-    visibility: hidden;
+    top: 5%;
+    left: 50%;
 }
-div.img-mold {
-    z-index: 0;
+
+#formacacao {
+    position: absolute;
+    top: 25%;
+    left: 80%;
 }
-div.img-foto {
-    z-index: 1;
+
+#idiomas {
+    position: absolute;
+    top: 75%;
+    left: 10%;
 }
-div.img-md-conteudo {
-    z-index: 1;
+
+#contato {
+    position: absolute;
+    top: 95%;
+    left: 50%;
 }
+
+#experiencias {
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}
+
+.lista {
+    color: orangered;
+}
+

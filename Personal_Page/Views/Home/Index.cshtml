@@ -2,33 +2,68 @@
     ViewData["Title"] = "Home Page";
 }
 
-<script>
-    function fade(id, visible) {
-        var img = document.getElementById(id);
-        img.style.visibility = (visible ? 'visible' : 'hidden');
-    }
-
-</script>
-
-<label class="table-bordered" id="edLabel" onmouseout="fade('mdA', false);" onmouseover="fade('mdA', true);">Education</label>
-
-<div class="img-mold">
+<div class="img-moldura">
     <img src="~/images/moldura centro.jpg" id="mdCentro" />
 </div>
+
 <div class="img-foto">
     <img src="~/images/índice.png" id="foto" />
 </div>
 
-<div class="img-md-conteudo">
-    <img src="~/images/moldura conteudo.jpg" id="mdA" />
+<div id="nome">
+<label  class="textos"> EVERSON DOS SANTOS DE MENEZES</label>
 </div>
-<div class="img-md-conteudo">
-    <img src="~/images/moldura conteudo.jpg" id="mdB" />
+
+<div id="experiencias">
+    <label class="textos"> Experiências</label>
 </div>
-<div class="img-md-conteudo">
-    <img src="~/images/moldura conteudo.jpg" id="mdC" />
+
+<div id="habilidades">
+    <label class="textos"> Habilidades</label>
 </div>
-<div class="img-md-conteudo">
-    <img src="~/images/moldura conteudo.jpg" id="mdD" />
+
+<div id="contato">
+    <label class="textos"> Contato</label>
 </div>
+
+<div id="formacacao">
+    <label class="textos"> Formação</label>
+</div>
+
+<div id="idiomas">
+    <label class="textos"> Idiomas</label>
+</div>
+
+<div id="interesses">
+    <label class="textos" onmouseover="teste();"> Interesses</label>
+    <ul class="lista">
+        <li>
+            m
+        </li>
+
+        <li>
+            f
+        </li>
+
+        <li>
+            v
+        </li>
+
+        <li>
+            E
+        </li>
+
+    </ul>
+</div>
+
+<script>
+    function teste() {
+        alert("Passou o mouse")
+    }
+</script>
+
+
+
+
+
 
