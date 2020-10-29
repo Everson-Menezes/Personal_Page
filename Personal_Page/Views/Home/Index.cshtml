@@ -2,40 +2,104 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="img-moldura">
-    <img src="~/images/moldura centro.jpg" id="mdCentro" />
+<div id="nome">
+    <label class="textos" onmousemove="exibirDiv('conteudoNome')" onmouseout="ocultarDiv('conteudoNome')"> EVERSON DOS SANTOS DE MENEZES</label>
+    <div class="caixa" id="conteudoNome" style="display:none">
+        <p class="paragrafo">
+            Profissional reabilitado pelo INSS com experiência de mais de 15 anos em empresas de pequeno, médio e grande porte nas áreas de serviços elétricos, construção civil, metalúrgica e tecnologia da informação.
+            Personalidade calmo, frio, equilibrado, perseverante, assíduo, franco e de caráter.
+            Atualmente estudante de informática para negócios na Fatec-SBC e Auxiliar de Suporte na empresa Thomas Greg & Sons.
+        </p>
+    </div>
 </div>
 
 <div class="img-foto">
     <img src="~/images/índice.png" id="foto" />
 </div>
 
-<div id="nome">
-<label  class="textos"> EVERSON DOS SANTOS DE MENEZES</label>
-</div>
+
 
 <div id="experiencias">
-    <label class="textos"> Experiências</label>
+    <label class="textos" onmousemove="exibirDiv('conteudoExperiencia')" onmouseout="ocultarDiv('conteudoExperiencia')"> Experiências</label>
+    <div class="caixaEx" id="conteudoExperiencia" style="display:none">
+        <p class="paragrafo">
+            <strong>Thomas Greg & Sons (10/2019 - até o momento)</strong>
+            Auxiliar de suporte: <br />
+            Administrar solicitações e mudanças feitas por clientes internos e externos; atendimento de chamados para dar suporte N2; elaborar, complementar e realizar cenários de testes; identificar e solucionar problemas, implantar melhorias por meio das tecnologias C# e SQL.
+        </p>
+
+    </div>
 </div>
 
 <div id="habilidades">
     <label class="textos"> Habilidades</label>
+
 </div>
 
 <div id="contato">
-    <label class="textos"> Contato</label>
+    <label class="textos" onmousemove="exibirDiv('conteudoContato')" onmouseout="ocultarDiv('conteudoContato')"> Contato</label>
+</div>
+
+<div class="caixaC" id="conteudoContato" style="display:none">
+    <img id="imgEmail" src="~/images/email.jpg" /><label class="subTextos">everson.menezes@fatec.sp.gov.br</label><br />
+
+    <img id="imgTel" src="~/images/tel.jpg" /><label class="subTextos">(13) 9 9666-4409</label>
 </div>
 
 <div id="formacacao">
-    <label class="textos"> Formação</label>
+    <label class="textos" onmousemove="exibirDiv('conteudoFormacao')" onmouseout="ocultarDiv('conteudoFormacao')"> Formação</label>
+    <div class="caixaF" id="conteudoFormacao" style="display:none">
+        <p class="paragrafo">
+            <strong>2/2019 – 12/2021 </strong><br />
+            Superior de Tecnologia em Informática para Negócios - Fatec de São Bernardo do Campo.<br />
+            <strong>2015</strong><br />
+            Superior tecnólogo comercia exterior - (Interrompido no último semestre.) –  ESAMC Santos.
+        </p>
+    </div>
 </div>
 
 <div id="idiomas">
-    <label class="textos"> Idiomas</label>
+    <label class="textos" onmousemove="exibirDiv('conteudoIdioma')" onmouseout="ocultarDiv('conteudoIdioma')"> Idiomas</label>
+    <div class="caixaI" id="conteudoIdioma" style="display:none">
+
+        <div class="barra">
+            <div class="preenchimento">A1</div>
+            <div class="preenchimento">A2</div>
+            <div class="preenchimento">B1</div>
+            <div class="preenchimento">B2</div>
+            <div class="preenchimentoOff">C1</div>
+            <div class="preenchimentoOff">C2</div>
+        </div>
+        <p class="subTextos">Inglês</p>
+
+        <div class="barra">
+            <div class="preenchimento">A1</div>
+            <div class="preenchimento">A2</div>
+            <div class="preenchimentoOff">B1</div>
+            <div class="preenchimentoOff">B2</div>
+            <div class="preenchimentoOff">C1</div>
+            <div class="preenchimentoOff">C2</div>
+        </div>
+        <p class="subTextos">Italiano</p>
+
+        <div class="barra">
+            <div class="preenchimento">A1</div>
+            <div class="preenchimento">A2</div>
+            <div class="preenchimentoOff">B1</div>
+            <div class="preenchimentoOff">B2</div>
+            <div class="preenchimentoOff">C1</div>
+            <div class="preenchimentoOff">C2</div>
+        </div>
+        <p class="subTextos">Espanhol</p>
+
+    </div>
 </div>
 
 <div id="interesses">
-    <label class="textos" onmouseover="teste();"> Interesses</label>
+    <label class="textos" onmouseover="exibirDiv('conteudoInteresse')" onmouseout="ocultarDiv('conteudoInteresse')"> Hobbies</label>
+</div>
+
+<div id="conteudoInteresse" style="display:none">
     <ul class="lista">
         <li>
             m
@@ -52,15 +116,8 @@
         <li>
             E
         </li>
-
     </ul>
 </div>
-
-<script>
-    function teste() {
-        alert("Passou o mouse")
-    }
-</script>
 
 
 

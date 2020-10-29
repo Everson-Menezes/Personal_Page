@@ -1,9 +1,14 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-<script>
-    function teste() {
-        alert("Passou o mouse")
+﻿var display
+function exibirDiv(idDiv) {
+    display = window.document.getElementById(idDiv).style.display;
+    if (display == "none") {
+        window.document.getElementById(idDiv).style.display = "block";
     }
-</script>
+}
+
+function ocultarDiv(idDiv) {
+    display = window.document.getElementById(idDiv).style.display;
+    if (display == "block") {
+        window.document.getElementById(idDiv).style.display = "none";
+    }
+}
